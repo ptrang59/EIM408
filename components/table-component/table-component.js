@@ -2,7 +2,7 @@ new gridjs.Grid({
   columns: ["", "Parameter", "Working Distance", "Size & Portability"],
   data: [
     ["LDF", "Blood flow", "Contact", "Benchtop, Large (~4kg) [21]"],
-    ["Traditional LSS", "Contact", "Short (10-50cm)", "Benchtop, Large (~2.3kg) [22]"],
+    ["Traditional LSS", "Blood flow", "Short (10-50cm)", "Benchtop, Large (~2.3kg) [22]"],
     ["rPPG", "Pulsatile blood volume", "Short (~1m)", "Portable"],
   ]
 }).render(document.getElementById("table-1"));
@@ -11,7 +11,7 @@ new gridjs.Grid({
   columns: ["", "Parameter", "Working Distance", "Size & Portability"],
   data: [
     ["LDF", "Blood flow", "Contact", "Benchtop, Large (~4kg) [21]"],
-    ["Traditional LSS", "Contact", "Short (10-50cm)", "Benchtop, Large (~2.3kg) [22]"],
+    ["Traditional LSS", "Blood flow", "Short (10-50cm)", "Benchtop, Large (~2.3kg) [22]"],
     ["rPPG", "Pulsatile blood volume", "Short (~1m)", "Portable"],
     ["Proposed Solution", "Blood flow", "Long (>1m)", "Portable"]
   ]

@@ -16,3 +16,72 @@ p {
   text-align: justify;
   font-size: 1.1rem;
 }
+
+
+/* PDF Export - A4 Portrait */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+
+  html,
+  body {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Remove horizontal scrolling */
+  .table-container,
+  .table-wrapper,
+  .table-responsive {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* Fit table into portrait page */
+  table {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed !important;
+    border-collapse: collapse;
+    font-size: 9px !important;
+  }
+
+  th,
+  td {
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    padding: 4px !important;
+    font-size: 9px !important;
+    line-height: 1.3 !important;
+  }
+
+  tr {
+    break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  h1, h2, h3 {
+    break-after: avoid;
+  }
+}
