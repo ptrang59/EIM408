@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Project Title</title>
+  <title>EIM-408</title>
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
@@ -35,20 +35,12 @@
 
 <body>
   <div class="content">
-    <h1>Project Title</h1>
+    <h1>Non-contact Remote Facial Blood Flow Monitoring using Laser Speckle Sensing</h1>
 
     <!-- This is the team member component use to display details about your team members -->
     <div class="team-member-wrapper">
-      <team-member avatar="assets/blackranger.png" name="Black" department="Mechanical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/yellowranger.png" name="Yellow" department="Computer Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/redranger.png" name="Red" department="Electrical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/pinkranger.png" name="Pink" department="Biomedical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/blueranger.png" name="Blue" department="Chemical Engineering"
-        year="1993"></team-member>
+      <team-member avatar="assets/me.png" name="Nguyen Thi Phuong Trang" department="Biomedical Engineering"
+        year="2023"></team-member>
     </div>
 
     <!-- This is a divide from the shoelace library for aesthetic purpose -->
@@ -58,24 +50,76 @@
     <div class="table-of-content">
       <h2>Table of Contents</h2>
       <sl-tree>
+        <sl-tree-item>
+          <a href="#section-header-1">Acknowledgement</a>
+        </sl-tree-item>
+
         <sl-tree-item expanded>
-          <a href="#section-header-1">1. Section Header 1</a>
+          <a href="#section-header-1">1. Introduction</a>
           <sl-tree-item>
-            <a href="#sub-section-1-header-1">1.1. Sub-section Header 1</a>
+            <a href="#sub-section-1-header-1">1.1. Remote Blood Flow Monitoring</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-1-header-2">1.2. Sub-section Header 2</a>
+            <a href="#sub-section-1-header-2">1.2. Facial Blood Flow & Clinical Applications</a>
           </sl-tree-item>
         </sl-tree-item>
 
         <sl-tree-item expanded>
-          <a href="#section-header-2">2. Section Header 1</a>
+          <a href="#section-header-2">2. Existing Techniques</a>
           <sl-tree-item>
-            <a href="#sub-section-2-header-1">2.1. Sub-section Header 1</a>
+            <a href="#sub-section-2-header-1">2.1. Laser Doppler Flowmetry</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-2-header-2">2.2. Sub-section Header 2</a>
+            <a href="#sub-section-2-header-2">2.2. Traditional Laser Speckle Sensing</a>
           </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-2-header-3">2.2. Remote Photoplesthymography</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-2-header-4">2.3. Comparision</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        <sl-tree-item>
+          <a href="#section-header-1">3. Problem Statement</a>
+        </sl-tree-item>
+
+        <sl-tree-item expanded>
+          <a href="#section-header-1">4. Design Specifications & Concept Design</a>
+          <sl-tree-item>
+            <a href="#sub-section-1-header-1">4.1. Design Specifications</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-1-header-2">4.2. Laser Speckle Sensing</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-1-header-2">4.3. Features</a>
+          </sl-tree-item>
+        </sl-tree-item>
+        
+        <sl-tree-item expanded>
+          <a href="#section-header-1">5. Prototyping & Testing</a>
+          <sl-tree-item>
+            <a href="#sub-section-1-header-1">5.1. Prototype</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-1-header-2">5.2. Testing Experiments</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-1-header-2">5.3. Testing Data</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        <sl-tree-item>
+          <a href="#section-header-1">6. Improvements</a>
+        </sl-tree-item>
+
+        <sl-tree-item>
+          <a href="#section-header-1">7. Upcoming Plans</a>
+        </sl-tree-item>
+
+        <sl-tree-item>
+          <a href="#section-header-1">8. Conclusion</a>
         </sl-tree-item>
 
         <sl-tree-item>
@@ -89,58 +133,52 @@
 
       <!-- This is an example of what a section might look like -->
       <div id="section-header-1">
-        <h2> 1. Section Header 1 </h2>
+        <h2> Acknowledgement </h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna
-          aliqua. Tincidunt ornare massa eget egestas. At tellus at urna condimentum mattis pellentesque id nibh tortor.
-          Elementum sagittis vitae et leo duis ut diam. Morbi tristique senectus et netus et malesuada fames.
-          Suspendisse
-          ultrices gravida dictum fusce ut placerat orci. Risus nullam eget felis eget nunc lobortis mattis aliquam
-          faucibus
-          (Brody, 2007). Eget sit amet tellus cras adipiscing enim eu turpis egestas. Aliquet nibh praesent tristique
-          magna
-          sit amet purus. Adipiscing bibendum est ultricies integer quis auctor elit sed. Fermentum et sollicitudin ac
-          orci
-          phasellus egestas tellus rutrum. At in tellus integer feugiat scelerisque varius morbi enim nunc. Volutpat
-          blandit
-          aliquam etiam erat velit scelerisque in. Id diam maecenas ultricies mi eget mauris pharetra et. Nec dui nunc
-          mattis
-          enim ut tellus elementum sagittis vitae.
+          I would like to express my sincere gratitude to my Principal Investigator, Dr. Bi Renzhe, for giving me the opportunity to work on this project and for his meaningful support throughout. I am also thankful to my mentor, Dr. Qi Yi, for his guidance and for his constructive feedback, which helped me improve my design. My thanks also go to my colleagues at the A*STAR Skin Research Lab, whom I had the privilege of working with during the experiments. Finally, I am especially grateful to Prof. Mark Chong for helping me align this project with the CDE4301 framework and approach.
         </p>
       </div>
 
-      <div id="sub-section-1-header-1">
-        <h3>1.1 Sub-section Header 1</h3>
+      <div id="section-header-1">
+        <h2>1. Introduction</h2>
+        <div id="sub-section-1-header-2">
+        <h3>1.1 Remote Blood Flow Monitoring</h3>
         <p>
-          Ultrices dui sapien eget mi. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Dolor purus non enim
-          praesent elementum facilisis. Lacus vestibulum sed arcu non odio euismod lacinia at. Metus aliquam eleifend mi
-          in nulla. Lacus sed viverra tellus in hac habitasse platea. Varius quam quisque id diam vel quam elementum
-          pulvinar. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Diam ut venenatis tellus in metus
-          vulputate. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Venenatis lectus magna
-          fringilla
-          urna. In nisl nisi scelerisque eu ultrices. Velit egestas dui id ornare arcu odio ut sem nulla. Quam id leo in
-          vitae. Egestas congue quisque egestas diam in arcu cursus euismod quis. Porttitor leo a diam sollicitudin
-          tempor
-          id eu nisl.
+          Blood flow, also referred as pulsatile blood flow, is the wave-like movement of blood, driven by the heart’s left ventricle contraction [1]. Monitoring it can help clinicians assess patients’ vascular condition, health status and other related diseases.
         </p>
+        <image-component 
+          tag="image" 
+          source="assets/bloodflow.png"
+          subtitle="Figure 1. Pulsatile blood flow graph"
+        ></image-component>
+        <p>
+          Currently, there is an increasing demand for moving towards remote blood flow monitoring. The remote approaches can enable continuous physiological monitoring in a safer and more effective way. It can also avoid physical contact for patients who need repeated monitoring for a long time or those who have vulnerable skin conditions, minimising discomfort or difficulty when attaching contact sensors on skin [2]. Furthermore, remote monitoring can reduce manual measurement for clinicians and operator dependency, especially for techniques where technical skills can significantly affect result accuracy [3].
+        </p> 
       </div>
 
       <div id="sub-section-1-header-2">
-        <h3>1.2 Sub-section Header 2</h3>
+        <h3>1.2. Facial Blood Flow & Clinical Applications</h3>
         <p>
-          Fermentum dui faucibus in ornare quam viverra orci. Donec ultrices tincidunt arcu non sodales. A diam maecenas
-          sed enim ut sem viverra. Semper viverra nam libero justo laoreet sit. Mi sit amet mauris commodo quis. Auctor
-          augue mauris augue neque gravida in fermentum et. Auctor elit sed vulputate mi sit amet. Maecenas pharetra
-          convallis posuere morbi leo urna. Sem nulla pharetra diam sit amet nisl. Id nibh tortor id aliquet lectus.
-          Nibh
-          nisl condimentum id venenatis a condimentum vitae sapien. Convallis posuere morbi leo urna molestie at
-          elementum.
+         To develop a remote blood flow monitoring system, the facial region represents a promising measurement target. Face has a rich network of superficial blood vessels, providing a highly vascularized area. This location is relatively accessible in nature and generally unobstructed by clothing compared to other body regions. 
         </p>
-
-        <!-- This is an example of how you might use the image component -->
-        <image-component tag="image" source="assets/requirement.png"
-          subtitle="Image 1: iDP suggested pathway"></image-component>
+        <image-component 
+          tag="image" 
+          source="assets/facialbf.png"
+          subtitle="Figure 2. Facial vascular network"
+          style="width: 200px; height: auto; display: block; margin-left: auto; margin-right: auto;"
+        ></image-component>
+        <p>
+          Besides its anatomical advantages, facial blood flow shows many potential clinical applications. It can provide data about heart rate [4] or emotional status [5]. Previous studies have also reported the potential of facial blood flow as an indicator to detect hypertension [6], a very common medical condition in Singapore, affecting approximately 33.8% of adults aged from 18-74 years in 2025 [7]. Furthermore, it also has been investigated for diabetes assessment [6][8], which is another growing public health challenge in Singapore, with a prevalence rate of 9.1% of adults aged from 18-64 years in 2025 [7]. 
+        </p>
+        <p>
+          With these potential applications, the remote system can be implemented across various scenarios including hospital settings such as Intensive Care Unit (ICU), nursing homes, mental healthcare wards, or home-based settings for elderly living alone. 
+        </p>
+        <p>
+          The primary target application of this project is heart rate monitoring for patients in inpatient psychiatric facilities, with particular emphasis on enabling clinicians to track patients’ condition overnight. In this setting, contact-based monitoring or placing monitoring equipment within a patient’s reach are undesirable. Mental health conditions may significantly affect patient cooperation when attaching sensors on their body or move and tamper with nearby machines. These constraints highlight the importance for a long-distance remote physiological monitoring system. This application scenario was identified through discussions with the stakeholder at the A*STAR Skin Research Lab.
+        </p>
+        <p>
+          The illustration (Appendix 1) shows the remote system’s working mode, where patients’ data collected by the system will be transmitted via network to clinicians, families or hospital A&E for emergent cases.
+        </p>
       </div>
     </div>
 
@@ -150,50 +188,303 @@
     <sl-divider></sl-divider>
     <div>
       <div id="section-header-2">
-        <h2>2. Section Header 2</h2>
+        <h2>2. Existing Techniques</h2>
+        <div id="sub-section-2-header-1">
+        <h3>2.1. Laser Doppler Flowmetry</h3>
         <p>
-          Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
-          eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
-          tellus in hac habitasse platea dictumst vestibulum. At augue eget arcu dictum varius duis. Mauris ultrices
-          eros in cursus turpis massa (Lindberg, 1967). Libero nunc consequat interdum varius sit amet mattis. Ut ornare
-          lectus sit amet est placerat in egestas erat. Elementum curabitur vitae nunc sed. Proin nibh nisl condimentum
-          id venenatis a condimentum vitae sapien (Chamberlin et al., 2008). Vitae tempus quam pellentesque nec nam
-          aliquam sem.
+          Laser Doppler Flowmetry (LDF) is a noninvasive approach using the Doppler effect, resulting in the frequency shift of the laser light scattered by moving red blood cells [9]. However, the system generally requires attaching contact sensors on the patient’s skin. 
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/ldf.png"
+          subtitle="Figure 3. LDF working principle diagram"
+          style="width: 300px; height: auto; display: block; margin-left: auto; margin-right: auto;"
+        ></image-component>
+        <p>
+          This technique achieves high accuracy and provides reliable results for skin blood flow measurements as it shows a strong correlation with a standard method (Pearson’s r = 0.94-0.98) [10]. LDF has been adopted in various commercialized equipment. For example, OxyFlo® device has high performance in continuous blood flow monitoring with the stability of reading at ± 5% [11]. 
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/oxyflo.png"
+          subtitle="Figure 4. OxyFlo® LDF device"
+          style="width: 300px; height: auto; display: block; margin-left: auto; margin-right: auto;"
+        ></image-component>
+      </div>
+
+      <div id="sub-section-2-header-1">
+        <h3>2.2 Traditional Laser Speckle Sensing</h3>
+        <p>
+          Traditional Laser Speckle Sensing (LSS) detects the speckle variations due to movement of red blood cells to achieve blood flow, which speckle pattern refers to the random, granular, interference pattern of laser light with bright and dark spots [12]. It has been reported to show good reproducibility for inter-day measurement of skin blood flow with only about 8% variations between sessions [13]. This indicates that LSS is likely to detect real changes in blood flow and have low measurement noise. Thus, the technique is also commercially used in blood flow monitoring devices.          
+        </p>
+        <div style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; flex-wrap: wrap;">
+          <image-component 
+            tag="image" 
+            source="assets/lss.png"
+            subtitle="Figure 5. (a) Traditional LSS commercialized devices, RFLSI-ZW®"
+             style="width: 300px; height: auto;"
+          ></image-component>
+          <image-component 
+            tag="image" 
+            source="assets/speckle.png"
+            subtitle="(b) Speckle pattern image"
+            style="width: 140px; height: 140px;"
+          ></image-component>
+        </div>
+        <p>
+          Traditional LSS technique is currently able to work remotely at a short distance, ranging from 10 up to 50 cm. No significant variations in measurement when conducting experiments in different distances from 10 to 30 cm [14]. However, the effect of longer distance has not been investigated.
         </p>
       </div>
 
       <div id="sub-section-2-header-1">
-        <h3>2.1. Sub-section Header 1</h3>
+        <h3>2.3 Remote Photoplethysmography</h3>
         <p>
-          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
-          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
-          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
-          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
-          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
-          fames ac. <a href="#image">Link to the image above</a>
+          Remote photoplethysmography (rPPG) also monitors blood perfusion, referring to the delivery of blood to tissues, by capturing skin color changes caused by pulsatile blood volume variations [15]. Most systems use a standard webcam or smartphone camera, often combined with deep learning, to extract this pulsatile signal. Because rPPG measures blood volume changes and not blood flow, which is the main parameter in this project, it is an indirect approach. However, it targets the same applications, especially heart rate monitoring, where mobile-based rPPG has reported accuracy of up to 99.1% [16].
         </p>
-
-        <!-- This is an example of how you might use the video component -->
-        <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          subtitle="Video: Never gonna give you up?"></video-component>
+        <div style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; flex-wrap: wrap;">
+          <image-component 
+            tag="image" 
+            source="assets/rppg1.png"
+            subtitle="Figure 6. (a) rPPG using web camera and phone camera"
+             style="width: 350px; height: auto;"
+          ></image-component>
+          <image-component 
+            tag="image" 
+            source="assets/rppg2.png"
+            subtitle="(b) rPPG working principle"
+            style="width: 200px; height: auto;"
+          ></image-component>
+        </div>
+        <p>
+        As rPPG typically relies on consumer cameras such as webcams and smartphones, the limited resolution reduces as the distance increases, so the method is usually applied at working distances of around 1 m [17]. Furthermore, skin tone bias is another limitation in rPPG. Darker skin has higher melanin concentration, which strongly absorbs light. Thus, the lower intensity of light returning to the camera may lead to weaker signal and decrease the accuracy [18]. Public rPPG datasets also currently lack diversity in skin pigmentation with fewer data collected in darker skin tones [19][20].    
+        </p>
       </div>
 
       <div id="sub-section-2-header-2">
-        <h3>2.2. Sub-section Header 2</h3>
+        <h3>2.4 Comparison</h3>
         <p>
-          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
-          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
-          habitant
-          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
-          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
-          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
+          Table 1 summarizes the reviewed techniques. All three are optical approaches with good reported performance, which supports the use of optical sensing for facial blood flow monitoring.
+        </p>
+        <p>
+          However, each technique also has limitations. The existing methods currently operate at contact mode or in limited working distance, without further investigation at longer distances. Furthermore, LDF and traditional LSS have rather bulky machines or relatively fixed benchtop systems, reducing the portability. 
         </p>
 
-        <!-- This is an example of how you might use the table component -->
-        <table-component subtitle="Table: Demo table">
+        <table-component subtitle="Table 1. Existing technique comparison">
           <div id="table-1"></div>
         </table-component>
+        <p>
+          Consequently, no existing technique offers contactless, blood flow sensing at long working distances in a portable form. This gap motivates the proposed solution, which extends laser speckle sensing to longer distances.
+        </p>
       </div>
+    </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-2">
+        <h2>3. Problem Statement</h2>
+        <p>
+          The current gap and increasing demand leads to the problem statement for the project: How can a remote and contactless system be designed to measure relative facial blood flow over a long distance, which can increase flexibility and portability for implementing the system in various clinical applications, while providing highly accurate data?
+        </p>
+        <table-component subtitle="Table 2. Existing techniques vs Proposed solution">
+          <div id="table-2"></div>
+        </table-component>
+      </div>
+    </div>
+
+    
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-2">
+        <h2>4. Design Specifications & Concept Design</h2>
+        <div id="sub-section-2-header-1">
+        <h3>4.1 Design Specifications</h3>
+        <p>
+          In terms of the design specifications, firstly, the proposed solution must operate at the minimum distance of 2 meters between the subject and the system, which is the main differentiating feature of the solution. Secondly, the system must capture pulsatile blood flow changes accurately. Specifically, a strong correlation in performance, with Pearson’s r > 0.7, should be achieved, in comparison with the reference device. It should also have good reproducibility, which is comparable to 8% inter-day variations in traditional LSS [13]. Lastly, since the proposed solution is an optical system, it must comply with the laser speckle safety standard, which is Class 1 per IEC 60825-1:2014 [21]. This classification indicates that the device is safe to use without additional eye protection. 
+        </p>
+
+        <div id="sub-section-2-header-1">
+        <h3>4.2 Laser Speckle Sensing</h3>
+        <p>
+          Laser Speckle Sensing is the chosen concept to develop the proposed solution, since it has shown strong performance in existing short-range contactless systems and has potential to be extended to longer distances. 
+        </p>
+        <p>
+          Coherent laser light forms a speckle pattern, which is a random, granular and interference pattern. When red blood cells move along the blood vessel, the movement leads to speckle variations. The contrast of the speckle changes with blood flow, which is inversely proportional to the speed of moving red blood cells. By utilizing the principle in shifting pattern instead of light absorption in rPPG, skin tone may have less effect on the signal measured by Laser Speckle Sensing [22].
+        </p>
+        <p>
+          The laser speckle contrast (K) is calculated using mean intensity and standard deviation of intensity of the speckle pattern [23]:
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/eq1.png"
+          subtitle=""
+          style="width: 300px; height: auto; display: block; margin-left: auto; margin-right: auto;"
+        ></image-component>
+        <p>
+          Using the laser speckle contrast, the blood flow index (BFI) is then calculated via the equation [23]: 
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/eq2.png"
+          subtitle=""
+          style="width: 100px; height: auto; display: block; margin-left: auto; margin-right: auto;"
+        ></image-component>
+        <p>
+          These equations will be used in the speckle analysis for the proposed solution to achieve desirable blood flow waveform. 
+        </p>
+        <p>
+          The blood flow index (BFI) obtained by the proposed solution is a relative, unitless measurement and does not quantify absolute blood flow in physical units (e.g., mL/min). Nevertheless, it is sufficient for the potential applications described in Section 1.2. For example, heart rate monitoring depends on the timing of the waveform peaks, which a relative BFI preserves.
+        </p>
+
+        <div id="sub-section-2-header-1">
+        <h3>4.3 Features</h3>
+        <p>
+          The proposed solution includes 3 main features. The first component is the laser source to illuminate the measurement site, which is facial skin in this application. By providing illumination, laser speckle patterns are generated. The second component is the camera and lens to capture the speckle images, enabling non-contact image acquisition with sufficient resolution for analyzing. The last feature is the LabVIEW programme to control the camera settings, such as exposure time, width and height of speckle images, and perform speckle pattern analysis. This programme allows automated image acquisition and achieves blood flow graphs from the speckle images. 
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/concept.png"
+          subtitle="Figure 7. Concept design of proposed solution"
+          style="width: 300px; height: auto; display: block; margin-left: auto; margin-right: auto;"
+        ></image-component>
+      </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-2">
+        <h2>5. Prototyping & Testing</h2>
+        <div id="sub-section-2-header-1">
+        <h3>5.1 Prototype Development</h3>
+        <p>
+          From the concept design, a prototype has been built with a laser source and a CMOS camera. The camera is connected to a computer via USB port to perform with a LabVIEW code.
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/prototype.png"
+          subtitle="Figure 8. Prototype of remote system"
+        ></image-component>
+
+        <h3>5.2 Testing Experiments</h3>
+        <p>
+          To test this prototype, experiments have been conducted to compare the performance of the prototype with a reference device. The experiments were conducted under normal room lighting. Optical filters were fitted to the camera and lens to suppress the influence of ambient light and ensure that the recorded speckle patterns came from the laser illumination. The subjects were sitting during the measurement to reduce motion artifacts. 
+        </p>
+        <p>
+          The measurement site is the arms to enable simultaneous measurement and comparison in real time. The reference device is a contact-based system and the probe is worn on one hand. The other hand will be monitored by the non-contact system. Two systems will measure the blood flow in the radial artery in the arm, which is easily accessible and located by feeling the pulse near the subject's palm. 
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/radial.png"
+          subtitle="Figure 9. Radial Artery location for measurement"
+          style="width: 200px; height: auto; display: block; margin-left: auto; margin-right: auto;"
+        ></image-component>
+        <image-component 
+          tag="image" 
+          source="assets/setup.png"
+          subtitle="Figure 10. Experiment setup (a) Contact system, (b) Non-contact system, (c) Overview of experiment"
+        ></image-component>
+        <p>
+          Applying both systems on the same arm have been considered since measuring at the same artery may reduce the potential fluctuations. However, multiple systems on one site may obstruct the camera view of the remote system. Furthermore, keeping only one system can let the arm rest in a fixed position better and reduce movement during measurement. Therefore, this setup was eventually not chosen for the testing experiments.  
+        </p>
+        <p>
+          While the absolute blood flow velocity has slight differences between two arms [24], a research has shown the close blood perfusion values between two hands with less than 9% variations when measuring the same area of arm with laser speckle sensing techniques [25]. Therefore, real-time comparison between two hands from this experiment setup can be reliable without the significant impact of spatial variations.
+        </p>
+        <p>
+          Both systems use laser speckle sensing as the primary technique to monitor blood flow and will be connected to the same computer. The LabVIEW programme (Appendix 2) within the computer will operate the automated image acquisition with synchronized frame rate between two cameras. Blood flow index (BFI) analysis will be processed from the acquired speckle images and then plotted to achieve the BFI graph for blood flow waveform illustration. These data and images will be automatically saved for further analysis after the experiments. 
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/labview.png"
+          subtitle="Figure 11. LabVIEW programme flowchart"
+        ></image-component>
+        
+        <h3>5.3 Testing Data</h3>
+        <p>
+          The testing is conducted in the subject's resting state, also referring to normal state. Compared to the reference device, the proposed solution achieves a good shape of the blood flow waveform with less noise and synchronized frame rate. However, there are differences in peak variations between two graphs. The Pearson's r between BFI waveforms of contact and remote systems is 0.7.
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/rest.png"
+          subtitle="Figure 12. BFI graph for resting state"
+        ></image-component>
+        <p>
+          The testing is also performed after exercise, when the subject’s heart rate is increasing. Similarly, the achieved BFI waveform is in a good shape but still has differences in the peak changes in two systems. The Pearson's r between BFI waveforms of contact and remote systems is 0.61. Increased heart rate leads to faster blood flow and thus, pulses are narrower. It may result in lower laser speckle contrast and thus, the signal-to-noise ratio drops.
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/exercise.png"
+          subtitle="Figure 13. BFI graph after exercise"
+        ></image-component>
+        <image-component 
+          tag="image" 
+          source="assets/blur.png"
+          subtitle="Figure 14. Laser Speckle Patterns for resting state and after exercise"
+        ></image-component>
+    </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-2">
+        <h2>6. Improvements</h2>
+        <p>
+          Based on the testing data, there are potential improvements to enhance the system’s performance. Firstly, the design of the non-contact, remote system should be considered. Currently, the camera lacks a sufficient support holder since the lens attached to it is relatively long. During the testing phase, some objects need to be stacked up and placed under to hold the lens. The instability of the system setup may reduce the quality of speckle images and the accuracy of BFI analysis. Therefore, an additional holder using 3D printing can be used to increase the stability.
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/holder.png"
+          subtitle="Figure 15. Current holder for camera"
+          style="width: 200px; height: auto; display: block; margin-left: auto; margin-right: auto;"
+        ></image-component>
+        <p>
+          Secondly, the placement of measurement site and ROI selection is also a potential factor that affects the accuracy. While the radial artery is relatively accessible, it is required to be placed at a correct position, especially in the defined ROI to reduce the noise in blood flow graphs. Since the artery position is different among people, this variation may lead to wrong positioning and decrease overall performance. Therefore, a better way for positioning and ROI selection should be considered.
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/position.png"
+          subtitle="Figure 16. Current hand position for remote system measurement"
+          style="width: 200px; height: auto; display: block; margin-left: auto; margin-right: auto;"
+        ></image-component>
+        <p>
+          Motion artifact has also been reported as a considerable factor causing noise and lowering the accuracy of blood flow monitoring in laser speckle sensing [26]. Thus, further experiment and analysis to evaluate its effect on the system is also important.
+        </p>
+        <p>
+          By improving these factors, the experiments can have a more standardized setup between trials and thus, increase the stability and accuracy in performance. The next testing iterations can extract and validate heart rate from the BFI graph, and change the measurement site to face. 
+        </p>
+        <p>
+          Finally, Machine Learning (ML) is also considered to be incorporated into the system to transform facial blood flow into more insightful information [27]. The data achieved by the LabVIEW programme will then be analyzed by ML. ML can report insights and predictions related to the patient’s health status such as abnormal detection, which can be assessed by the clinicians through our remote working modes mentioned in Section 1.2.
+        </p>
+    </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-2">
+        <h2>7. Upcoming plan</h2>
+        <p>
+          With the concept design and potential improvement, a plan is built for the continuous development of the proposed system. The considerations for the system design will be included in the next prototyping iterations. The testing phase will also shift to the facial region after achieving high performance in arm measurement. Furthermore, more data will be collected during testing experiments for the ML training phase before validating its accuracy in clinical assessment and predictions. 
+        </p>
+        <image-component 
+          tag="image" 
+          source="assets/plan.png"
+          subtitle="Figure 17. Upcoming plan for the project"
+        ></image-component>
+    </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-2">
+        <h2>8. Conclusion</h2>
+        <p>
+          In conclusion, this project focuses on developing a contactless, remote system using laser speckle sensing to monitor facial blood flow. The main differentiating feature is the ability to measure at a long distance to be applicable for various applications. Further improvement on the data accuracy and clinical insight extraction will be considered and implemented to achieve better system performance. 
+        </p>
     </div>
 
     <!-- This is an example of how you can use the references component to create references -->
@@ -202,20 +493,124 @@
       <h2>References</h2>
       <ul>
         <li>
-          Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times. Retrieved from
-          http://www.dowjones.com/factiva/
+          [1] J. Flores, J. Alastruey, and E. C. Poiré, “A novel analytical approach to pulsatile blood flow in the arterial network” Annals of Biomedical Engineering, vol. 44, no. 10, pp. 3047–3068, May 2016, doi: 10.1007/s10439-016-1625-3.
         </li>
         <li>
-          Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational
-          health psychologists convene to share their research on work, stress, and health. Monitor on Psychology,
-          39(5), 26-29.
+          [2] A. Guigui, J. Loader, A. Bellier, and M. Roustit, “Commentary: Multiple laser Doppler flowmetry probes increase the reproducibility of skin blood flow measurements,” Front. Physiol., vol. 13, Art. no. 1025905, Oct. 2022, doi: 10.3389/fphys.2022.1025905.
         </li>
         <li>
-          Jones, T. J., & Fields, N. (2003). Emotional quotient and personality. E-Journal of Applied Psychology, 2(2),
-          38-45. Retrieved from http://ejournalappliedpsyc/index.php/ejap
+          [3] . Lee, “Signal processing techniques for operator independent Doppler ultrasound: Potential for use in transcranial Doppler ultrasound”, Dept. Phys., Ryerson Univ., Toronto, ON, Canada, 2011, doi: 10.32920/ryerson.14664744. 
         </li>
+        <li>
+          [4] S. Koh, “Polyclinic patients to trial AI tool that reads heart rate and blood pressure with just a phone camera” Polyclinics SingHealth, Jun. 20, 2025. https://polyclinic.singhealth.com.sg/news/research/polyclinic-patients-to-trial-ai-tool-that-reads-heart-rate-and-b        
+        </li>
+        <li>
+          [5] K. Matsukawa, K. Endo, K. Ishii, M. Ito, and N. Liang, “Facial skin blood flow responses during exposures to emotionally charged movies” The Journal of Physiological Sciences, vol. 68, no. 2, pp. 175–190, Jan. 2017, doi: 10.1007/s12576-017-0522-3.
+        </li>
+        <li>
+          [6] “AI-based diagnosis of hypertension and diabetes from a single facial video” Escardio, Sep. 17, 2026. https://www.escardio.org/news/press/press-releases/ai-based-diagnosis-of-hypertension-and-diabetes-from-a-single-facial-video/
+        </li>
+        <li>
+          [7] “National Population Health Survey 2024 Shows Singaporeans Are Adopting Healthier Lifestyles, But Rising Obesity Is A Concern” Ministry of Health, Jul. 30, 2026. https://www.moh.gov.sg/newsroom/national-population-health-survey-2024-shows-singaporeans-are-adopting-healthier-lifestyles---but-rising-obesity-is-a-concern/
+        </li>
+        <li>
+          [8] L. A. Euprazia, A. Rajeswari, K. K. Thyagharajan, and N. R. Shanker, “Type 1 and Type 2 diabetes measurement using human face skin region” Journal of Diabetes Research, vol. 2023, pp. 1–14, Sep. 2023, doi: 10.1155/2023/9931010.
+        </li>
+        <li>
+          [9] J. Croft, “What does a laser Doppler flowmeter measure?,” Oxford Optronix, Sep. 2025. https://www.oxford-optronix.com/resources/what-does-a-laser-doppler-flowmeter-measure 
+        </li>
+        <li>
+          [10] J. M. Johnson, W. F. Taylor, A. P. Shepherd, and M. K. Park, “Laser-Doppler measurement of skin blood flow: Comparison with plethysmography,” Journal of Applied Physiology, vol. 56, no. 3, pp. 798–803, Mar. 1984, doi: 10.1152/jappl.1984.56.3.798.
+        </li>
+
+        <li>
+          [11] Scintica, “OxyFlo™ & OxyFlo™ Pro/Pro XL: Laser-Doppler tissue blood flow monitor/perfusion monitoring,” Scintica. [Online]. Available: https://scintica.com/product/physiology/tissue-perfussion-monitor/.
+        </li>
+
+        <li>
+          [12] A. K. Dunn, “Laser speckle contrast imaging of cerebral blood flow,” Annals of Biomedical Engineering, vol. 40, no. 2, pp. 367–377, Feb. 2012, doi: 10.1007/s10439-011-0469-0.
+        </li>
+
+        <li>
+          [13] M. Roustit, C. Millet, S. Blaise, B. Dufournet, and J. L. Cracowski, “Excellent reproducibility of laser speckle contrast imaging to assess skin microvascular reactivity,” Microvascular Research, vol. 80, no. 3, pp. 505–511, Dec. 2010, doi: 10.1016/j.mvr.2010.05.012.
+        </li>
+
+        <li>
+          [14] G. Mahé, F. Haj-Yassin, P. Rousseau, A. Humeau, S. Durand, G. Leftheriotis, and P. Abraham, “Distance between laser head and skin does not influence skin blood flow values recorded by laser speckle imaging,” Microvascular Research, vol. 82, no. 3, pp. 439–442, 2011, doi: 10.1016/j.mvr.2011.06.014.
+        </li>
+
+        <li>
+          [15] S. Y. L. Tan, J. X. Chai, M. Choi, U. Javaid, B. P. Y. Tan, B. S. Y. Chow, and H. R. Abdullah, “Remote photoplethysmography technology for blood pressure and hemoglobin level assessment in the preoperative assessment setting: Algorithm development study,” JMIR Formative Research, vol. 9, Art. no. e60455, 2025, doi: 10.2196/60455.
+        </li>
+
+        <li>
+          [16] G. Zuccotti et al., “Accuracy of heart rate, pulse oxygen saturation, and blood pressure using a non-contact photoplethysmography-based mobile application: A potential tool for wellness monitoring,” Digital Health, vol. 11, Art. no. 20552076251351841, Jul. 2025, doi: 10.1177/20552076251351841.
+        </li>
+
+        <li>
+          [17] W. Wang, A. C. den Brinker, and G. de Haan, “Single-element remote-PPG,” IEEE Transactions on Biomedical Engineering, vol. 66, no. 7, pp. 2032–2043, Jul. 2019, doi: 10.1109/TBME.2018.2882396.
+        </li>
+
+        <li>
+          [18] E. M. Nowara, D. McDuff, and A. Veeraraghavan, “A meta-analysis of the impact of skin type and gender on non-contact photoplethysmography measurements,” in Proc. IEEE/CVF Conf. Computer Vision and Pattern Recognition Workshops (CVPRW), 2020, pp. 1148–1155, doi: 10.1109/CVPRW50498.2020.00150.
+        </li>
+
+        <li>
+          [19] M. Bondarenko, C. Menon, and M. Elgendi, “Demographic bias in public remote photoplethysmography datasets,” npj Digital Medicine, vol. 8, no. 1, Art. no. 593, Oct. 2025, doi: 10.1038/s41746-025-01973-9.
+        </li>
+
+        <li>
+          [20] U. Debnath and S. Kim, “A comprehensive review of heart rate measurement using remote photoplethysmography and deep learning,” Biomedical Engineering Online, vol. 24, no. 1, Art. no. 73, Jun. 2025, doi: 10.1186/s12938-025-01405-5.
+        </li>
+
+        <li>
+          [21] Laser 2000, “Class 1 laser safety explained: Standards, labels, eye safety & compliance,” Laser 2000, 2026. [Online]. Available: https://photonics.laser2000.co.uk/blogs/class-1-laser-safety-guide/. [Accessed: Nov. 14, 2026].
+        </li>
+
+        <li>
+          [22] imec, “Speckle sensing for continuous health monitoring,” imec. [Online]. Available: https://www.imec-int.com/en/expertise/accelerating-healthcare-innovation-advanced-chip-technology/speckle-sensing.
+        </li>
+
+        <li>
+          [23] R. Bi et al., “Optical methods for blood perfusion measurement—theoretical comparison among four different modalities,” Journal of the Optical Society of America A, vol. 32, no. 5, pp. 860–866, 2015.
+        </li>
+
+        <li>
+          [24] J. U. Kim, Y. J. Lee, J. Lee, and J. Y. Kim, “Differences in the properties of the radial artery between Cun, Guan, Chi, and nearby segments using ultrasonographic imaging: A pilot study on arterial depth, diameter, and blood flow,” Evidence-Based Complementary and Alternative Medicine, vol. 2015, Art. no. 381634, 2015, doi: 10.1155/2015/381634.
+        </li>
+
+        <li>
+          [25] A. Humeau-Heurtier, J. Dexet, P. Abraham, and G. Mahé, “Laser speckle contrast images processing of data to analyze microvascular variations in hand skin of healthy subjects,” in Proc. International Conference on Bio-inspired Systems and Signal Processing (BIOSIGNALS), 2014. [Online]. Available: https://www.scitepress.org/Papers/2014/48929/pdf/index.html.
+        </li>
+
+        <li>
+          [26] W. Heeman, H. Maassen, K. Dijkstra, J. Calon, H. van Goor, H. Leuvenink, G. M. van Dam, and E. C. Boerma, “Real-time, multi-spectral motion artefact correction and compensation for laser speckle contrast imaging,” Scientific Reports, vol. 12, no. 1, Art. no. 21718, Dec. 2022, doi: 10.1038/s41598-022-26154-6.
+        </li>
+
+        <li>
+          [27] M. Hultman, M. Larsson, T. Strömberg, and I. Fredriksson, “Real-time video-rate perfusion imaging using multi-exposure laser speckle contrast imaging and machine learning,” Journal of Biomedical Optics, vol. 25, no. 11, Art. no. 116007, 2020, doi: 10.1117/1.JBO.25.11.116007.
+        </li>
+
       </ul>
     </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-2">
+        <h2>Appendix</h2>
+        <image-component 
+          tag="image" 
+          source="assets/mode.png"
+          subtitle="Appendix 1. Remote system working mode"
+        ></image-component>
+        <image-component 
+          tag="image" 
+          source="assets/labview2.png"
+          subtitle="Appendix 2. LabVIEW programme"
+        ></image-component>
+    </div>  
   </div>
 
   <!-- This is the code to display the scroll to top button for ergonomic -->
